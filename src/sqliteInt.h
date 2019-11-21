@@ -23,6 +23,7 @@
 ** Ticket #2739:  The _LARGEFILE_SOURCE macro must appear before any
 ** system #includes.  Hence, this block of code must be the very first
 ** code in all source files.
+**此宏_LARGEFILE_SOURCE 必须出现在#include前
 **
 ** Large file support can be disabled using the -DSQLITE_DISABLE_LFS switch
 ** on the compiler command line.  This is necessary if you are compiling
@@ -31,7 +32,7 @@
 ** without this option, LFS is enable.  But LFS does not exist in the kernel
 ** in Red Hat 6.0, so the code won't work.  Hence, for maximum binary
 ** portability you should omit LFS.
-**
+**LFS大文件支持，在旧系统无法得到支持，例如redhat6 mac8 以及之前
 ** Similar is true for Mac OS X.  LFS is only supported on Mac OS X 9 and later.
 */
 #ifndef SQLITE_DISABLE_LFS
@@ -44,7 +45,7 @@
 
 /*
 ** Include the configuration header output by 'configure' if we're using the
-** autoconf-based build
+** autoconf-based build使用自动配置编译需要此头文件
 */
 #ifdef _HAVE_SQLITE_CONFIG_H
 #include "config.h"
@@ -67,7 +68,7 @@
 #endif
 
 /*
-** Include standard header files as necessary
+** Include standard header files as necessary标准头文件
 */
 #ifdef HAVE_STDINT_H
 #include <stdint.h>
