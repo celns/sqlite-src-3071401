@@ -114,6 +114,7 @@ char *sqlite3_data_directory = 0;
 **    *  Recursive calls to this routine from thread X return immediately
 **       without blocking.
 */
+//初始化SQLite
 int sqlite3_initialize(void){
   MUTEX_LOGIC( sqlite3_mutex *pMaster; )       /* The main static mutex */
   int rc;                                      /* Result code */
