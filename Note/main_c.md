@@ -27,4 +27,7 @@
 |int sqlite3_test_control(int op, ...);|测试接口
 |const char *sqlite3_db_filename(sqlite3 *db, const char *zDbName);|返回数据库连接的文件名
 ***
-以上表格囊括了`main.c`中大部分的接口，未包括的还有一些SQLite对错误和异常进行处理的接口和一些基础库信息获取的接口（例如SQLite运行时版本号等等）。
+
+# 总结
+以上表格囊括了`main.c`中大部分的接口，未包括的还有一些SQLite对错误和异常进行处理的接口和一些基础库信息获取的接口（例如SQLite运行时版本号等等）。  
+可以看出来`main.c`囊括了SQLite最基础，最基本的操作接口，包括初始化，注销和配置等。其中也不乏一些为了向下兼容而保留的废弃接口。
