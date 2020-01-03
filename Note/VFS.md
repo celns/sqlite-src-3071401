@@ -10,7 +10,7 @@
 
 # 2. VFS与其他SQLite模块的关联(The VFS In Relation To The Rest Of SQLite)
 
-![VFS](VFS.jpg)  
+![VFS](vfsRaleted.gif)  
 
 ### SQLite库的内部组织可以视为如上图所示的模块堆栈。  
 **Tokenizer**，**Parser**和**Code Generator**组件用于处理SQL语句，并将其转换为虚拟机语言或字节码的可执行程序。  
