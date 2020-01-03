@@ -1,10 +1,11 @@
+# SQLite的操作系统接口或“ VFS”
 前言：OS层，主要是为了提高可移植性而设计出来的，其底层是基于个**VFS**(虚拟文件系统)的模块来实现。  
 
 原文：[The SQLite OS Interface or "VFS"](https://www.sqlite.org/vfs.html)   
 中译：celns 
 ***
 
-# SQLite的操作系统接口或“ VFS”
+
 # 1. 简介(Introduction)
 本文介绍了SQLite OS可移植性层或“ VFS”，这是SQLite实现堆栈底部的模块，该模块提供了跨操作系统的可移植性。
 
