@@ -1,4 +1,4 @@
-前言：OS层，主要是为了提高可移植性而设计出来来，其底层是基于个**VFS**(虚拟文件系统)的模块来实现。  
+前言：OS层，主要是为了提高可移植性而设计出来的，其底层是基于个**VFS**(虚拟文件系统)的模块来实现。  
 
 原文：[The SQLite OS Interface or "VFS"](https://www.sqlite.org/vfs.html)   
 中译：celns 
