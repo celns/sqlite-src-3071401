@@ -1,3 +1,4 @@
+# SQLite的架构
 前言：官方文档作为第一手参考资料，必然是一个了解开源项目的第一手段（除非文档烂的一批）。所幸，对于SQLite来说，其文档还是不错的，包含了足够的信息。  
 
 原文：[Architecture of SQLite](https://www.sqlite.org/arch.html)   
@@ -70,4 +71,5 @@ SQLite当前为UNIX（在`os_unix.c`文件中）和Windows（在`os_win.c`文件
 `utf.c`包含Unicode转换子程序。SQLite的有它自己的私有实现的`printf()`（带有一些扩展）在`printf.c`中，伪随机数生成器（PRNG）在`random.c`中。
 # 测试代码(Test Code)
 “src/”文件夹中，名称以test开头的文件, 仅用于测试，并不包含在标准库中。
+
 
